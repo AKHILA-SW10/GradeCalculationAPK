@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pff-1R-DJq">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--GradeVC-->
+        <scene sceneID="h5o-9N-AgT">
+            <objects>
+                <viewController id="y1C-us-iBn" customClass="GradeVC" customModule="AkhilaGradeDisplay" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="96n-wY-lNq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TotalScore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T4f-i9-1s2">
+                                <rect key="frame" x="88" y="217" width="82" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Grade" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nao-um-EBd">
+                                <rect key="frame" x="88" y="328" width="47" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i5E-wX-ZcJ">
+                                <rect key="frame" x="228" y="306" width="110" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KvV-Wh-W6F">
+                                <rect key="frame" x="228" y="204" width="128" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PQy-cn-mQc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6EL-qd-txO"/>
+                    <connections>
+                        <outlet property="gradeLbl" destination="i5E-wX-ZcJ" id="Ujg-lH-kkD"/>
+                        <outlet property="scoreLbl" destination="KvV-Wh-W6F" id="A1t-I0-JxD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P5n-hN-Xj6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="486.95652173913049" y="-1619.1964285714284"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="GRg-xr-5gv">
+            <objects>
+                <tabBarController id="Pff-1R-DJq" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7gH-aR-Frf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="6va-kp-Duk" kind="relationship" relationship="viewControllers" id="wec-1A-Ebt"/>
+                        <segue destination="Y5S-v0-Bq4" kind="relationship" relationship="viewControllers" id="I8x-YE-vS0"/>
+                        <segue destination="OGs-ox-Xr3" kind="relationship" relationship="viewControllers" id="i3s-fe-rGJ"/>
+                        <segue destination="BkM-iS-QHb" kind="relationship" relationship="viewControllers" id="ZYn-zh-BNT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tbZ-rJ-sdB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2286" y="-990"/>
+        </scene>
+        <!--Grade-->
+        <scene sceneID="kUy-0f-rly">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6va-kp-Duk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Grade" id="1vK-y0-KRb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jsa-G4-48x">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y1C-us-iBn" kind="relationship" relationship="rootViewController" id="Eeq-4M-xUt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vtj-zG-Nu2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-868" y="-1619"/>
+        </scene>
+        <!--Assignment-->
+        <scene sceneID="YE9-WL-tGe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y5S-v0-Bq4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Assignment" id="2Os-Z5-bzP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0bK-NH-D5C">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SyE-IP-Mkb" kind="relationship" relationship="rootViewController" id="eT7-F6-uZn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhR-Ev-X9S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-868" y="-887"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="C18-g1-TIy">
+            <objects>
+                <tableViewController id="SyE-IP-Mkb" customClass="AssignmentTableVC" customModule="AkhilaGradeDisplay" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Cnn-ny-r4f">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="assignmentCell" rowHeight="138" id="zYt-Il-Qjn" customClass="tableCellTableViewCell" customModule="AkhilaGradeDisplay" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="138"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zYt-Il-Qjn" id="FMw-Zw-2z9">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="SyE-IP-Mkb" id="Hj1-Sa-2m8"/>
+                            <outlet property="delegate" destination="SyE-IP-Mkb" id="IdY-ve-jtf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="160-jr-9IR"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vKy-Ql-bok" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="674" y="-887"/>
+        </scene>
+        <!--Exams-->
+        <scene sceneID="1kh-Pc-qn7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OGs-ox-Xr3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Exams" id="OgN-Rq-RHz"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="U3s-BS-Jlb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sDK-hm-Qvq" kind="relationship" relationship="rootViewController" id="In7-ud-Biu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Sj-yS-Wzr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-868" y="-142"/>
+        </scene>
+        <!--Exam TableVC-->
+        <scene sceneID="hEr-57-uw0">
+            <objects>
+                <tableViewController id="sDK-hm-Qvq" customClass="ExamTableVC" customModule="AkhilaGradeDisplay" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="rxo-6c-e8W">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="examCell" rowHeight="144" id="4dv-qM-wna" customClass="tableCellTableViewCell" customModule="AkhilaGradeDisplay" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="144"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4dv-qM-wna" id="oVJ-mJ-G4m" customClass="tableCellTableViewCell" customModule="AkhilaGradeDisplay" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sDK-hm-Qvq" id="6lq-Ga-Vt5"/>
+                            <outlet property="delegate" destination="sDK-hm-Qvq" id="GvS-8G-xwZ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="Min-4q-w6T"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="voS-u2-1Td" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881" y="-152"/>
+        </scene>
+        <!--Project-->
+        <scene sceneID="B7C-SB-s0a">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BkM-iS-QHb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Project" id="9UM-5j-q2g"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PPf-xL-zGO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="F8o-g0-VEq" kind="relationship" relationship="rootViewController" id="NeS-bp-4e4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xai-YT-NDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-868" y="819"/>
+        </scene>
+        <!--Project TableVC-->
+        <scene sceneID="FJc-Bp-qLb">
+            <objects>
+                <tableViewController id="F8o-g0-VEq" customClass="ProjectTableVC" customModule="AkhilaGradeDisplay" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="oAU-Pv-u4X">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="projectCell" rowHeight="120" id="FDh-Tf-Hgf" customClass="tableCellTableViewCell" customModule="AkhilaGradeDisplay" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="FDh-Tf-Hgf" id="auP-X0-A4N">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="F8o-g0-VEq" id="C7v-yn-8Sq"/>
+                            <outlet property="delegate" destination="F8o-g0-VEq" id="wGF-bB-a7s"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="iwF-hC-DdK"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tyh-Mw-IVm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="596" y="819"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
